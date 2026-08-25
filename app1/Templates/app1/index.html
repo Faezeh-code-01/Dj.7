@@ -1,0 +1,20 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "app1/style.css" %}">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is app1.index Template</h1> 
+
+    {% for k,v in links.items %}
+
+        <a href=" {{v}} ">{{k}}</a>
+
+    {% endfor %}
+</body>
+</html>
